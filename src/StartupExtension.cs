@@ -8,6 +8,10 @@ using NToastNotify;
 using NToastNotify.Helpers;
 using NToastNotify.MessageContainers;
 
+#if NETCOREAPP3_0
+using Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation; 
+#endif
+
 namespace Microsoft.Extensions.DependencyInjection
 {
     public static class StartupExtension
@@ -73,10 +77,19 @@ namespace Microsoft.Extensions.DependencyInjection
             #region Framework Services
             //Add the file provider to the Razor view engine
             var fileProvider = Utils.GetEmbeddedFileProvider();
+#if NETSTANDARD2_0
             services.Configure<RazorViewEngineOptions>(options =>
             {
                 options.FileProviders.Add(fileProvider);
             });
+#endif
+
+#if NETCOREAPP3_0
+            services.Configure<MvcRazorRuntimeCompilationOptions>(options =>
+            {
+                options.FileProviders.Add(fileProvider);
+            });
+#endif
 
             //Check if a TempDataProvider is already registered.
             var tempDataProvider = services.FirstOrDefault(d => d.ServiceType == typeof(ITempDataProvider));

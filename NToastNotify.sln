@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2024
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29123.89
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NToastNotify", "src\NToastNotify.csproj", "{70FC6753-E13C-4FF0-8FC1-914B9478A11F}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Toastr", "sample\NToastNotify.Toastr\Toastr.csproj", "{0782C622-F9E7-45DE-961C-D78419E97A35}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Noty.FeatureFolders", "sample\NToastNotify.Noty.FeatureFolders\Noty.FeatureFolders.csproj", "{8C18B4E0-6333-4BF8-B6EE-1EB6E546FEE2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication1", "sample\WebApplication1\WebApplication1.csproj", "{1A4187D6-3973-461E-B19F-F588773C45A2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +73,18 @@ Global
 		{8C18B4E0-6333-4BF8-B6EE-1EB6E546FEE2}.Release|x64.Build.0 = Release|Any CPU
 		{8C18B4E0-6333-4BF8-B6EE-1EB6E546FEE2}.Release|x86.ActiveCfg = Release|Any CPU
 		{8C18B4E0-6333-4BF8-B6EE-1EB6E546FEE2}.Release|x86.Build.0 = Release|Any CPU
+		{1A4187D6-3973-461E-B19F-F588773C45A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A4187D6-3973-461E-B19F-F588773C45A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A4187D6-3973-461E-B19F-F588773C45A2}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1A4187D6-3973-461E-B19F-F588773C45A2}.Debug|x64.Build.0 = Debug|Any CPU
+		{1A4187D6-3973-461E-B19F-F588773C45A2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1A4187D6-3973-461E-B19F-F588773C45A2}.Debug|x86.Build.0 = Debug|Any CPU
+		{1A4187D6-3973-461E-B19F-F588773C45A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A4187D6-3973-461E-B19F-F588773C45A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A4187D6-3973-461E-B19F-F588773C45A2}.Release|x64.ActiveCfg = Release|Any CPU
+		{1A4187D6-3973-461E-B19F-F588773C45A2}.Release|x64.Build.0 = Release|Any CPU
+		{1A4187D6-3973-461E-B19F-F588773C45A2}.Release|x86.ActiveCfg = Release|Any CPU
+		{1A4187D6-3973-461E-B19F-F588773C45A2}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -78,6 +92,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{0782C622-F9E7-45DE-961C-D78419E97A35} = {70B483EB-17CD-4DA9-B746-E03785D5CCB3}
 		{8C18B4E0-6333-4BF8-B6EE-1EB6E546FEE2} = {70B483EB-17CD-4DA9-B746-E03785D5CCB3}
+		{1A4187D6-3973-461E-B19F-F588773C45A2} = {70B483EB-17CD-4DA9-B746-E03785D5CCB3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D4720901-6BAC-48CE-A03E-85759AC6B66E}
